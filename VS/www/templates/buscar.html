@@ -1,0 +1,21 @@
+<ion-view title="Buscar">
+
+
+   <ion-content ng-controller="ExampleController" padding="true">
+      <button class="button button-full button-assertive" ng-click="takePhoto()">
+         Tomar foto
+      </button>
+      <button class="button button-full button-assertive" ng-click="choosePhoto()">
+         Seleccionar foto
+      </button>
+      <h3>Resultado:</h3>
+      <br>
+       <label>Confianza:</label>
+       <label>{{confi}}</label>
+       <br>
+        <label>Indentificado como:</label>
+       <label>{{tag}}</label>
+      <img ng-show="imgURI !== undefined" ng-src="{{imgURI}}" style="text-align: center">
+
+   </ion-content>
+</ion-view>
